@@ -94,7 +94,7 @@ function __narwhal_machine --argument-names sub machine
 
 end
 
-function narwhal --argument-names sub
+function narwhal --argument-names sub --description "A simple docker wrapper for fish-shell"
 
     set -l help
     set -l args
@@ -115,7 +115,7 @@ function narwhal --argument-names sub
       case 'help' ''
         __narwhal_usage
       case '*'
-        docker $argv
+        command docker $argv
     end
 
 end
