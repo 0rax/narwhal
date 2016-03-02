@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # -*-  mode:fish; tab-width:4  -*-
 #
-# narwhal by Jean-Philippe Roemer <roemer.jp@gmail.com>
+# narwhal by Jean-Philippe Roemer <jp@roemer.im>
 # https://github.com/0rax/narwhal
 #
 

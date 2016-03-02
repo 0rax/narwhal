@@ -40,7 +40,7 @@ Notes:
     When not specified, it is set to "default" to better wrap docker-toolbox.
 ```
 
-# Installation
+## Installation
 #### Using Symlinks (recommended method)
 ```
 # This method allows you to update narwhal by just doing a 'git pull'
@@ -62,7 +62,7 @@ cp narwhal.fish $FISH_CONFIG_FOLDER/functions/
 cp completions/narwhal.fish $FISH_CONFIG_FOLDER/completions/
 ```
 
-# Use Narwhal as drop-in wrapper for Docker
+## Use Narwhal as drop-in wrapper for Docker
 
 Narwhal can be used directly as a drop-in wrapper for Docker, this way you can add `alias docker narwhal` in your `$HOME/.config/fish/config.sh` and use narwhal as if you are using docker.
 
