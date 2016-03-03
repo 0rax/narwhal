@@ -1,3 +1,5 @@
+all:
+
 install:
 
 	install -d ~/.config/fish/functions
@@ -16,3 +18,5 @@ uninstall:
 	rm -f ~/.config/fish/functions/__narwhal_machine.fish
 	rm -f ~/.config/fish/functions/__narwhal_usage.fish
 	rm -f ~/.config/fish/completions/narwhal.fish
+
+.PHONY: all install uninstall
