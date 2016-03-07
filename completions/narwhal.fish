@@ -25,8 +25,13 @@ complete -c narwhal -n '__fish_narwhal_using_command cleanup' -xa images     --d
 complete -c narwhal -n '__fish_narwhal_using_command cleanup' -xa img        --description "Remove dangling images"
 complete -c narwhal -n '__fish_narwhal_using_command cleanup' -xa containers --description "Remove exited containers"
 complete -c narwhal -n '__fish_narwhal_using_command cleanup' -xa ctn        --description "Remove exited containers"
+complete -c narwhal -n '__fish_narwhal_using_command cleanup' -xa volumes    --description "Remove dangling volumes"
+complete -c narwhal -n '__fish_narwhal_using_command cleanup' -xa vol        --description "Remove dangling volumes"
+
 complete -c narwhal -n '__fish_narwhal_using_command cleanup' -s f           --description "Force deletion"
+complete -c narwhal -n '__fish_narwhal_using_command cleanup' -l force       --description "Force deletion"
 complete -c narwhal -n '__fish_narwhal_using_command cleanup' -s d           --description "Dry run"
+complete -c narwhal -n '__fish_narwhal_using_command cleanup' -l dry         --description "Dry run"
 
 complete -c narwhal -n '__fish_use_subcommand' -xa env      --description "Get environment for a Docker Machine"
 complete -c narwhal -n '__fish_use_subcommand' -xa unenv    --description "Erase Docker Machine environment"
