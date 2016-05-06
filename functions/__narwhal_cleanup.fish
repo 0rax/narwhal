@@ -61,10 +61,10 @@ function __narwhal_cleanup --argument-names cmd opt
         __narwhal_cleanup volumes $opt
         __narwhal_cleanup images $opt
       case '*'
-        echo "$_ cleanup [images|img] [-f|--force|-d|--dry]" 2>&1
-        echo "$_ cleanup [containers|ctn] [-f|--force|-d|--dry]" 2>&1
-        echo "$_ cleanup [volumes|vol] [-d|--dry]" 2>&1
-        echo "$_ cleanup all [-f|--force|-d|--dry]" 2>&1
+        echo "$_ [cleanup|clean] [images|img]     [-f|--force|-d|--dry]" 2>&1
+        echo "$_ [cleanup|clean] [containers|ctn] [-f|--force|-d|--dry]" 2>&1
+        echo "$_ [cleanup|clean] [volumes|vol]    [-d|--dry]" 2>&1
+        echo "$_ [cleanup|clean] all              [-f|--force|-d|--dry]" 2>&1
         return 1
     end
 
