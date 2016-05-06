@@ -17,7 +17,7 @@ Commands:
     compose [args..]
         Call docker-compose with args
         Alias for `docker-compose [args...]`
-    cleanup [images|img|containers|ctn|volumes|vol] [-f|--force|-d|--dry]
+    [clean|cleanup] [images|img|containers|ctn|volumes|vol|all] [-f|--force|-d|--dry]
         Remove dangling images, volumes or exited containers
         The --dry options shows the entities that would be removed by a cleanup
     [env|unenv] [machine_name]

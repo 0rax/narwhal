@@ -19,7 +19,7 @@ function narwhal --argument-names sub --description "A simple docker wrapper for
         docker-machine $args
       case compose
         docker-compose $args
-      case cleanup
+      case cleanup clean
         __narwhal_cleanup $args
       case env unenv mstart mstop mrestart status ip
         __narwhal_machine $argv

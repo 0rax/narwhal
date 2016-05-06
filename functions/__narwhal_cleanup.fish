@@ -56,10 +56,15 @@ function __narwhal_cleanup --argument-names cmd opt
             echo "# $_ cleanup $cmd (cleanup mode)" 1>&2
             docker volume rm $volumes
         end
+      case all
+        __narwhal_cleanup containers $opt
+        __narwhal_cleanup volumes $opt
+        __narwhal_cleanup images $opt
       case '*'
         echo "$_ cleanup [images|img] [-f|--force|-d|--dry]" 2>&1
         echo "$_ cleanup [containers|ctn] [-f|--force|-d|--dry]" 2>&1
         echo "$_ cleanup [volumes|vol] [-d|--dry]" 2>&1
+        echo "$_ cleanup all [-f|--force|-d|--dry]" 2>&1
         return 1
     end
 
