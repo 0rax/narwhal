@@ -3,9 +3,12 @@
 
 ## Usage
 ```
-Usage: narwhal COMMAND [OPTIONS]
+# narwhal 1.0.0 (https://github.com/0rax/narwhal)
 
 A simple docker wrapper (docker, docker-machine & docker-compose) for fish-shell.
+
+Usage:
+    narwhal COMMAND [OPTIONS]
 
 Commands:
     machine [args...]
@@ -14,8 +17,8 @@ Commands:
     compose [args..]
         Call docker-compose with args
         Alias for `docker-compose [args...]`
-    cleanup [images|img|containers|ctn] [-f|--force|-d|--dry]
-        Remove dangling images or exited contaners
+    [clean|cleanup] [images|img|containers|ctn|volumes|vol|all] [-f|--force|-d|--dry]
+        Remove dangling images, volumes or exited containers
         The --dry options shows the entities that would be removed by a cleanup
     [env|unenv] [machine_name]
         Get fish-compatible environment for specified Docker Machine

@@ -1,22 +1,24 @@
+FISH_CONFIG_PATH ?= ${HOME}/.config/fish
+
 all:
 
 install:
 
-	install -d ~/.config/fish/functions
-	install functions/narwhal.fish           ~/.config/fish/functions
-	install functions/__narwhal_cleanup.fish ~/.config/fish/functions
-	install functions/__narwhal_machine.fish ~/.config/fish/functions
-	install functions/__narwhal_usage.fish   ~/.config/fish/functions
+	install -d ${FISH_CONFIG_PATH}/functions
+	install functions/narwhal.fish           ${FISH_CONFIG_PATH}/functions
+	install functions/__narwhal_cleanup.fish ${FISH_CONFIG_PATH}/functions
+	install functions/__narwhal_machine.fish ${FISH_CONFIG_PATH}/functions
+	install functions/__narwhal_usage.fish   ${FISH_CONFIG_PATH}/functions
 
-	install -d ~/.config/fish/completions
-	install completions/narwhal.fish         ~/.config/fish/completions
+	install -d ${FISH_CONFIG_PATH}/completions
+	install completions/narwhal.fish         ${FISH_CONFIG_PATH}/completions
 
 uninstall:
 
-	rm -f ~/.config/fish/functions/narwhal.fish
-	rm -f ~/.config/fish/functions/__narwhal_cleanup.fish
-	rm -f ~/.config/fish/functions/__narwhal_machine.fish
-	rm -f ~/.config/fish/functions/__narwhal_usage.fish
-	rm -f ~/.config/fish/completions/narwhal.fish
+	rm -f ${FISH_CONFIG_PATH}/functions/narwhal.fish
+	rm -f ${FISH_CONFIG_PATH}/functions/__narwhal_cleanup.fish
+	rm -f ${FISH_CONFIG_PATH}/functions/__narwhal_machine.fish
+	rm -f ${FISH_CONFIG_PATH}/functions/__narwhal_usage.fish
+	rm -f ${FISH_CONFIG_PATH}/completions/narwhal.fish
 
 .PHONY: all install uninstall

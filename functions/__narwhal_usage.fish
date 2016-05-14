@@ -1,14 +1,17 @@
 #!/usr/bin/env fish
 # -*-  mode:fish; tab-width:4  -*-
 #
-# narwhal by Jean-Philippe Roemer <jp@roemer.im>
+# usage function for narwhal
 # https://github.com/0rax/narwhal
 #
 
 function __narwhal_usage
-    printf 'Usage: narwhal COMMAND [OPTIONS]
+    printf '# narwhal 1.0.0 (https://github.com/0rax/narwhal)
 
 A simple docker wrapper (docker, docker-machine & docker-compose) for fish-shell.
+
+Usage:
+    narwhal COMMAND [OPTIONS]
 
 Commands:
     machine [args...]

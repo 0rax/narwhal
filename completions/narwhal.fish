@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # -*-  mode:fish; tab-width:4  -*-
 #
-# fish-completion for narwhal by Jean-Philippe Roemer <jp@roemer.im>
+# fish-completion for narwhal
 # https://github.com/0rax/narwhal
 #
 
