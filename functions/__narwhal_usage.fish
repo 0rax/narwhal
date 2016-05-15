@@ -36,7 +36,7 @@ Commands:
         Get IP of specified Docker Machine
         Alias for `docker-machine inspect -f "{{ .Driver.IPAddress }}" [machine_name]`
     help
-        Print this help
+        Print this help and exit
     docker_subcommand [args...]
         All other subcommand are passed to docker
         Alias for `docker [docker_subcommand] [args...]`

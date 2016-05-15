@@ -15,17 +15,17 @@ function narwhal --argument-names sub --description "A simple docker wrapper for
     end
 
     switch "$sub"
-      case machine
+    case machine
         docker-machine $args
-      case compose
+    case compose
         docker-compose $args
-      case cleanup clean
+    case cleanup clean
         __narwhal_cleanup $args
-      case env unenv mstart mstop mrestart status ip
+    case env unenv mstart mstop mrestart status ip
         __narwhal_machine $argv
-      case 'help' ''
+    case 'help' ''
         __narwhal_usage
-      case '*'
+    case '*'
         command docker $argv
     end
 
